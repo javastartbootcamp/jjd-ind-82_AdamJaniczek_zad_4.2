@@ -25,7 +25,7 @@ public class Task {
     }
 
     boolean highPriority() {
-        return this.priority == 1;
+        return this.priority >= 1;
     }
 
     boolean mediumPriority() {
@@ -33,7 +33,7 @@ public class Task {
     }
 
     boolean lowPriority() {
-        return this.priority == -1;
+        return this.priority <= -1;
     }
 
     public void setPriority(int priority) {
